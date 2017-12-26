@@ -1,0 +1,5 @@
+select item_c, item_nam, price, quantity
+from order_detail, item;
+where order_detail.item_c = item.item_c 
+and order_no = 1 
+order by order_no;
